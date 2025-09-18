@@ -1,0 +1,38 @@
+/* Font optional (boleh ganti) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap");
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* THEME: warna brand maroon + font + radius + breakpoint */
+@theme {
+  /* brand (maroon, cocok dgn JournalKu) */
+  --color-brand-50:  oklch(0.98 0.004 20);
+  --color-brand-100: oklch(0.96 0.01 20);
+  --color-brand-200: oklch(0.90 0.03 20);
+  --color-brand-300: oklch(0.82 0.06 20);
+  --color-brand-400: oklch(0.74 0.11 20);
+  --color-brand-500: oklch(0.66 0.15 20);   /* tombol utama */
+  --color-brand-600: oklch(0.58 0.18 20);
+  --color-brand-700: oklch(0.50 0.20 20);   /* hover state */
+  --color-brand-800: oklch(0.43 0.18 20);
+  --color-brand-900: oklch(0.36 0.14 20);
+
+  /* font family */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* radius & shadow */
+  --radius-xl: 1.25rem;
+  --shadow-card: 0 10px 24px rgb(0 0 0 / 0.08);
+
+  /* breakpoint (opsional: kecilkan sm) */
+  --breakpoint-sm: 36rem;
+}
+
+/* Variant dark mode berbasis class .dark */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global kecil */
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); }
