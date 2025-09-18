@@ -1,5 +1,5 @@
 // src/components/ResumeButton.jsx
-import cvUrl from "../assets/Fransisco_Wahyu_CV.pdf";
+import cvUrl from "../assets/Fransisco_Wahyu_resume.pdf";
 
 export default function ResumeButton({ className = "" }) {
   return (
@@ -9,3 +9,4 @@ export default function ResumeButton({ className = "" }) {
     </a>
   );
 }
+
